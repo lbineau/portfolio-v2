@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     ** Headers of the page
     */
     head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
       title: 'Lory Bineau: Senior Frontend developer portfolio',
       meta: [
         { hid: 'description', name: 'description', content: 'After 2 years at Gobelins\' school and MNSTR company, I am working at blue-infinity (Geneva)' }
