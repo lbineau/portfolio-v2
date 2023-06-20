@@ -10,7 +10,7 @@
       <div class="links">
         <a href="https://codepen.io/lbineau/" target="_blank" class="button button--grey-light">Codepen</a>
         <a href="https://www.linkedin.com/in/lbineau/" target="_blank" class="button button--blue">Linkedin</a>
-        <a href="https://github.com/lbineau/" target="_blank" class="button button--grey">GitHub</a>
+        <a href="https://github.com/lbineau/portfolio-v2" target="_blank" class="button button--grey">GitHub</a>
         <a href="/media/lory-bineau_CV_2018.pdf" target="_blank" class="button button--black">C.V.(pdf)</a>
       </div>
       <PortfolioGrid v-if="portfolio" :items="portfolio" />
