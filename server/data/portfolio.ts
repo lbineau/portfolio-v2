@@ -1,5 +1,18 @@
 export default [
   {
+    id: 'pikapi',
+    name: 'PikAPI',
+    description: 'Personal project to compare Pokemon strengths and weaknesses',
+    link: 'https://pokemon.bineau.me/',
+    tools: ['Homemade', 'VueJS', 'API', 'Nuxt 3', 'Typescript'],
+    portfolioImages: [
+      '/portfolio/pikapi/1.jpg',
+      '/portfolio/pikapi/2.jpg',
+      '/portfolio/pikapi/3.jpg',
+      '/portfolio/pikapi/4.jpg'
+    ]
+  },
+  {
     id: 'un-diver',
     name: 'Ulysse Nardin Diver',
     description: 'Immersive 3d experience for the new Ulysse Nardin’s collection',
