@@ -28,6 +28,9 @@ html
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1rem;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 .title
 {
@@ -38,7 +41,7 @@ html
   line-height: 1;
   color: #35495e;
   letter-spacing: 1px;
-  margin: 0.3em auto;
+  margin: 0 auto 0.3em auto;
   small {
     font-size: 0.6em;
   }
@@ -57,22 +60,18 @@ html
     font-size: 2.5em;
   }
 }
-.links
-{
+.links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 1em 0.5em;
   padding-top: 15px;
   align-items: center;
   justify-content: center;
-  @media (min-width: 32em) {
-    flex-direction: row;
-  }
 }
 .button {
   display: inline-block;
   padding: 0.625em 1.875em;
-  margin: 1em 0.5em;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;

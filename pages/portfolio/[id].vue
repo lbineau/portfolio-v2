@@ -7,8 +7,10 @@
       <h1 class="title" v-text="item.name" />
       <h2 class="subtitle">
         <span v-html="item.description" /><br>
-        <span v-if="item.tools" class="technos" v-html="item.tools.join(' / ')" />
       </h2>
+      <ul v-if="item.tools" class="technos">
+        <li v-for="(tool, idx) in item.tools" :key="idx" class="tag" v-text="tool" />
+      </ul>
       <p v-if="item.link" class="cta">
         <a class="button button--blue" :href="item.link" target="_blank">Discover {{ item.name }}</a>
       </p>
@@ -72,15 +74,51 @@ export default {
     @media (min-width: 32em) {
       float: left;
       clear: right;
-      margin: 1rem 3rem;
+      margin: 1rem 2rem;
     }
   }
   .title {
     clear: left;
   }
   .subtitle {
-    .technos {
-      font-style: italic;
+  }
+
+  .technos {
+    .tag {
+      background: #eee;
+      border-radius: 3px 0 0 3px;
+      color: #555;
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 20px 0 23px;
+      position: relative;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .tag::before {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+      content: '';
+      height: 6px;
+      left: 10px;
+      position: absolute;
+      width: 6px;
+      top: 10px;
+    }
+
+    .tag::after {
+      background: #fff;
+      border-bottom: 13px solid transparent;
+      border-left: 10px solid #eee;
+      border-top: 13px solid transparent;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
   .portfolio-video {
@@ -102,10 +140,9 @@ export default {
   }
   .portfolio-images {
     margin: 1em auto;
-    padding: 0 1em;
     @media (min-width: 32em) {
       margin: 3em auto;
-      padding: 0 3em;
+      padding: 0 2em;
     }
     * + * {
       margin-top: 2em;

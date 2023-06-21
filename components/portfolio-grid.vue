@@ -53,13 +53,12 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
   }
   li {
-    margin: 10px 1%;
     min-width: 320px;
     max-width: 480px;
     max-height: 360px;
-    width: 48%;
     // only for javascript version
     #__nuxt:not([data-server-rendered="true"]) & {
       backface-visibility: hidden;
