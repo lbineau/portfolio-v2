@@ -55,6 +55,7 @@ export default {
     // only for javascript version
     #__nuxt:not([data-server-rendered="true"]) & {
       backface-visibility: hidden;
+      transform: translateZ(0);
       animation-fill-mode: backwards;
       animation: scroll-appear 1.2s cubic-bezier(.165,.84,.44,1);
       animation-play-state: paused;
