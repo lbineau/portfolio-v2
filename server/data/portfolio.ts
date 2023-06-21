@@ -83,9 +83,9 @@ export default [
     portfolioImages: [
       '/portfolio/traces/1.jpg',
       '/portfolio/traces/2.jpg',
-      '/portfolio/traces/3.jpg',
+      '/portfolio/traces/3.gif',
       '/portfolio/traces/4.jpg',
-      '/portfolio/traces/5.jpg',
+      '/portfolio/traces/5.gif',
       '/portfolio/traces/6.jpg'
     ]
   },
