@@ -4,12 +4,12 @@
       <li v-for="{id, title, images, views, link} in items" :key="id">
         <a :href="link" target="_blank">
           <figure>
-            <img :src="images.large" :alt="title"/>
-            <img class="over" :src="images.large" :alt="title"/>
+            <img :src="images.large" :alt="title">
+            <img class="over" :src="images.large" :alt="title">
             <figcaption>
-              <h3 v-html="title"></h3>
+              <h3 v-html="title" />
               <p>
-                <span v-if="views" v-html="views"></span>
+                <span v-if="views" v-html="views" />
               </p>
             </figcaption>
           </figure>
@@ -54,6 +54,7 @@ export default {
     width: 48%;
     // only for javascript version
     #__nuxt:not([data-server-rendered="true"]) & {
+      backface-visibility: hidden;
       animation-fill-mode: backwards;
       animation: scroll-appear 1.2s cubic-bezier(.165,.84,.44,1);
       animation-play-state: paused;

@@ -1,16 +1,16 @@
 <template>
   <nav class="portfolio-grid">
     <ul>
-      <li v-intersection-observer="(entries) => entries.forEach(toggleInViewportCSSClass)" v-for="item in items" :key="`portfolio-item-${item.id}`">
+      <li v-for="item in items" :key="`portfolio-item-${item.id}`" v-intersection-observer="(entries) => entries.forEach(toggleInViewportCSSClass)">
         <nuxt-link :to="'/portfolio/' + item.id">
           <figure>
-            <img :src="getThumb(item.id)" :alt="item.id"/>
-            <img class="over" :src="getThumb(item.id)" :alt="item.id"/>
+            <img :src="getThumb(item.id)" :alt="item.id">
+            <img class="over" :src="getThumb(item.id)" :alt="item.id">
             <figcaption>
-              <h3 v-text="item.name"></h3>
+              <h3 v-text="item.name" />
               <p>
-                <span v-html="item.description"></span><br/>
-                <span class="technos" v-if="item.tools" v-html="item.tools.join(' / ')"></span>
+                <span v-html="item.description" /><br>
+                <span v-if="item.tools" class="technos" v-html="item.tools.join(' / ')" />
               </p>
             </figcaption>
           </figure>
@@ -62,6 +62,7 @@ export default {
     width: 48%;
     // only for javascript version
     #__nuxt:not([data-server-rendered="true"]) & {
+      backface-visibility: hidden;
       animation-fill-mode: backwards;
       animation: scroll-appear 1.2s cubic-bezier(.165,.84,.44,1);
       animation-play-state: paused;
