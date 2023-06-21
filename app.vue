@@ -37,7 +37,7 @@ html
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1;
   color: #35495e;
   letter-spacing: 1px;
@@ -46,18 +46,18 @@ html
     font-size: 0.6em;
   }
   @media (min-width: 32em) {
-    font-size: 5em;
+    font-size: 3em;
   }
 }
 .subtitle
 {
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.3em;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
   @media (min-width: 32em) {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 .links {

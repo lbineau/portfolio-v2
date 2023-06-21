@@ -71,16 +71,15 @@ export default {
 .portfolio-detail {
   .button--back {
     font-size: 0.7em;
+    margin-bottom: 1rem;
+    float: left;
+    clear: right;
     @media (min-width: 32em) {
-      float: left;
-      clear: right;
       margin: 1rem 2rem;
     }
   }
   .title {
     clear: left;
-  }
-  .subtitle {
   }
 
   .technos {
@@ -96,6 +95,7 @@ export default {
       margin: 0 10px 10px 0;
       text-decoration: none;
       transition: color 0.2s;
+      font-size: 0.8em;
     }
 
     .tag::before {
